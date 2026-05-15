@@ -6,17 +6,25 @@ int main()
 {
     int arr[] = {3, 9, 1, 4, 7, 6, 3, 2, 8};
     int count = size(arr);
+    cout << "Count:" << count << endl;
     int position, element;
     cout << "Enter the element :" << endl;
     cin >> element;
     cout << "Enter the position  :" << endl;
     cin >> position;
-    int temp = arr[position];
-    arr[position] = element;
-    for (size_t i = position + 1; i < count + 1; i++)
+
+    for (int i = count; i >= position - 1; i--)
     {
-        temp = arr[]
+        arr[i] = arr[i - 1];
+    }
+    arr[position - 1] = element;
+    cout << "The element in array is :" << endl;
+    count++;
+    for (int i = 0; i < count; i++)
+    {
+        cout << arr[i] << endl;
     }
 
     return 0;
 }
+// Time-O(n) Space-O(1)
