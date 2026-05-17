@@ -1,4 +1,4 @@
-// Delete an element from an array.
+// Delete an element from an array
 #include <iostream>
 #include <iterator>
 using namespace std;
