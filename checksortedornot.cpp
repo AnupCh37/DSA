@@ -15,7 +15,6 @@ int main()
             ascending = false;
         }
 
-        // arr[i]<first_element
         if (arr[i] < arr[i + 1])
         {
             descending = false;
@@ -31,7 +30,7 @@ int main()
     }
     else
     {
-        cout << "Array is Not Sorted" << endl;.
+        cout << "Array is Not Sorted" << endl;
     }
 
     return 0;
