@@ -8,8 +8,13 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
+<<<<<<< HEAD
       "cwd": ".",
       "program": "build/Debug/outDebug",
+=======
+      "cwd": "c:/Users/anup3/OneDrive/Desktop/DSA",
+      "program": "c:/Users/anup3/OneDrive/Desktop/DSA/build/Debug/outDebug",
+>>>>>>> 702e8f6f68660c6eeb9032de7369677df5a39a2b
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
