@@ -56,4 +56,11 @@ public:
         }
         std::cout << std::endl;
     }
+    bool empty()
+    {
+        if (top < 0)
+        {
+            return true;
+        }
+    }
 };
