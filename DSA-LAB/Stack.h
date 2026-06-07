@@ -17,7 +17,6 @@ public:
             return;
         }
         arr[++top] = var;
-        std::cout << "Pushed: " << var << std::endl;
     }
 
     void pop()
@@ -27,7 +26,6 @@ public:
             std::cout << "Stack Underflow! Nothing to pop." << std::endl;
             return;
         }
-        std::cout << "Popped: " << arr[top] << std::endl;
         top--;
     }
 
@@ -35,10 +33,8 @@ public:
     {
         if (top < 0)
         {
-            std::cout << "Stack is empty!" << std::endl;
             return T();
         }
-        std::cout << "The top element is: " << arr[top] << std::endl;
         return arr[top];
     }
 
@@ -56,11 +52,9 @@ public:
         }
         std::cout << std::endl;
     }
+
     bool empty()
     {
-        if (top < 0)
-        {
-            return true;
-        }
+        return top < 0;
     }
 };
