@@ -12,6 +12,7 @@ int main()
 {
     int n;
     std::cin >> n;
+
     std::cout << tailFibonnaci(n, 0, 1) << std::endl;
     return 0;
 }

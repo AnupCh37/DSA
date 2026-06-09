@@ -49,8 +49,11 @@ public:
 
 int main()
 {
+    std::string exp;
+    std::cout<<"Enter the give expression"<<std::endl;
+    std::cin>>exp;
 
-    CheckParenthesis CP(" (A+B*C)) ");
+    CheckParenthesis CP(exp);
     CP.check();
 
     return 0;

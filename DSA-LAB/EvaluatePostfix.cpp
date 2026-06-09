@@ -79,6 +79,7 @@ public:
 int main()
 {
     std::string postfix = "623*+4-";
+    std::cout<<"The Postfix Expression is: "<<postfix<<std::endl;
     EvaluatePostfix E(postfix);
     E.Evaluate();
     E.Result();

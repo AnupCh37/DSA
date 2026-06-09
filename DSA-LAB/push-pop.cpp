@@ -5,14 +5,20 @@ int main()
 {
     Stack<char> S;
 
-    S.push('H');
+    S.push('D');
+    S.push('S');
     S.push('A');
-    S.push('R');
     S.push('I');
+    S.push('S');
+    S.push('G');
+    S.push('O');
+    S.push('O');
+    S.push('D');
     S.view();
 
     S.pop();
     S.pop();
+     S.pop();
     S.view();
 
     S.peek();
