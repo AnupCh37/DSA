@@ -36,73 +36,68 @@ public:
         Rear = newNode;
     }
 
-    int pop()
+    int dequeue()
     {
-        if (top == nullptr)
+        if (Front == nullptr)
         {
-            cout << "Stack Underflow! Stack is empty." << endl;
+            std::cout << "Queue Underflow" << std::endl;
             return -1;
         }
-
-        Node *temp = top;
-        int poppedValue = top->val;
-        top = top->next;
+        Node *temp = Front;
+        int DequeuedValue = Front->val;
+        Front = Front->next;
+        if (Front == nullptr)
+        {
+            Rear = nullptr;
+        }
         delete temp;
-
-        return poppedValue;
+        return DequeuedValue;
     }
 
     int peek()
     {
-        if (top == nullptr)
+        if (Front == NULL)
         {
-            cout << "Stack is empty." << endl;
+            std::cout << "Queue is Empty" << std::endl;
             return -1;
         }
-
-        return top->val;
+        return Front->val;
     }
-
     bool isEmpty()
     {
-        return top == nullptr;
+        return Front == nullptr;
     }
-
     void display()
     {
-        if (top == nullptr)
+        if (Front == nullptr)
         {
-            cout << "Stack is empty." << endl;
+            std::cout << "Queue is empty" << std::endl;
             return;
         }
-
-        Node *temp = top;
-
-        cout << "Stack elements: ";
-        while (temp != nullptr)
+        Node *temp = Front;
+        while (temp != NULL)
         {
-            cout << temp->val << " ";
+            std::cout << temp->val << " ->" << " ";
             temp = temp->next;
         }
-        cout << endl;
+        std::cout << " NULL" << std::endl;
+        return;
     }
 };
 
 int main()
 {
-    stackLL s;
-
-    s.push(10);
-    s.push(20);
-    s.push(30);
-
-    s.display();
-
-    cout << "Top element: " << s.peek() << endl;
-
-    cout << "Popped element: " << s.pop() << endl;
-
-    s.display();
-
+    QueueLL q;
+    q.Enqueue(10);
+    q.Enqueue(5);
+    q.Enqueue(15);
+    q.Enqueue(12);
+    q.display();
+    q.dequeue();
+    q.dequeue();
+    q.display();
+    std::cout << q.peek() << std::endl;
+    q.dequeue();
+    std::cout << q.peek() << std::endl;
     return 0;
 }
