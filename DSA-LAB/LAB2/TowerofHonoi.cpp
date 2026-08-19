@@ -17,7 +17,7 @@ void TowerOfHanoi(int n, char source, char auxiliary, char destination)
 }
 
 int main()
-{
+{ 
     int N;
     cout << "Enter the number of discs: ";
     cin >> N;
